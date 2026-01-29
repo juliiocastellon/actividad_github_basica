@@ -1,8 +1,6 @@
-// Calculator.java (version inicial)
+// Calculator.java (rama main/master, cambio para provocar conflicto)
 public class Calculator {
- public static int add(int a, int b) {
- return a + b;
- }
+ public static int add(int a, int b) { return a + b; }
  public static void main(String[] args) {
  if (args.length < 2) {
  System.out.println("Uso: java Calculator <a> <b>");
@@ -10,8 +8,9 @@ public class Calculator {
  }
  int a = Integer.parseInt(args[0]);
  int b = Integer.parseInt(args[1]);
- System.out.println(
- "Suma: " + a + " + " + b + " = " + add(a, b)
+ System.out.printf(
+ "Resultado suma = %d (a=%d, b=%d)%n",
+ add(a, b), a, b
  );
  }
 }
