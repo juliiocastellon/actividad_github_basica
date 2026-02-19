@@ -1,4 +1,4 @@
-// Calculator.java (rama feature/sub)
+// Calculator.java (tras resolver el conflicto)
 public class Calculator {
  public static int add(int a, int b) { return a + b; }
  public static int sub(int a, int b) { return a - b; }
@@ -13,12 +13,14 @@ public class Calculator {
  int b = Integer.parseInt(args[1]);
  String op = (args.length >= 3) ? args[2] : "sum";
  if ("sub".equals(op)) {
- System.out.println(
- "Resta: " + a + " - " + b + " = " + sub(a, b)
+ System.out.printf(
+ "Resultado resta = %d (a=%d, b=%d)%n",
+ sub(a, b), a, b
  );
  } else {
- System.out.println(
- "Suma: " + a + " + " + b + " = " + add(a, b)
+ System.out.printf(
+ "Resultado suma = %d (a=%d, b=%d)%n",
+ add(a, b), a, b
  );
  }
  }
